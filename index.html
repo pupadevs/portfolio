@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Peterson Sena - PortFolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+
+<body>
+    <div class="window" id="cvWindow">
+        <div class="title-bar">
+            <div class="title-bar-text">Peterson Sena</div>
+            <div class="title-bar-controls">
+                <button aria-label="Minimize" ">_</button>
+                <button aria-label=" Maximize" onclick="maximizeWindow()">⬜</button>
+                <button aria-label="Close" onclick="closeWindow()">×</button>
+            </div>
+        </div>
+        <div class="window-body" id="windowBody">
+            <nav class="menu">
+                <button onclick="showSection('about')">Sobre mí</button>
+                <button onclick="showSection('projects')">Proyectos</button>
+                <button onclick="showSection('experience')">Experiencia</button>
+                <button onclick="showSection('studies')">Estudios</button>
+                <button onclick="showSection('skills')">Habilidades</button>
+                <button onclick="showSection('contact')">Contacto</button>
+            </nav>
+            <div id="content">
+                <div id="about" class="section">
+                    <h2>Sobre mí</h2>
+                    <div class="about-container">
+                        <div class="about-photo">
+                            <img src="img/petercover.jpg" alt="Foto de Perfil">
+                        </div>
+                        <div class="about-details">
+
+                            <p>Programador PHP con experiencia previa como creador de videoclips musicales. Me reinventé hacia la programación, un mundo que siempre me ha cautivado desde mi primer encuentro con MS-DOS en 1995. Fusiono mi experiencia en la creación audiovisual con la programación para desarrollar soluciones innovadoras en este emocionante campo. Estoy siempre abierto a conocer nuevas tecnologías y aprender nuevas formas de lograr un código limpio y consistente. Disfruto sumergirme en desafios, son oportunidades para crecer y superarme constamente</p>
+                           <!--  <p>Mi historia no es convencional. Después de un tiempo como cineasta independiente durante
+                                cinco años, me reinventé varias veces. Esta versatilidad y capacidad de adaptación son
+                                rasgos que me distinguen. Ahora, como desarrollador, me especializo en crear soluciones
+                                robustas y escalables, enfocándome en el rendimiento óptimo y siguiendo las mejores
+                                prácticas de desarrollo y pruebas.</p> -->
+
+                            <button onclick="downloadCV()">Descargar CV</button>
+                        </div>
+                    </div>
+                </div>
+                <div id="projects" class="section" style="display: none;">
+                    <h2>Proyectos</h2>
+                    <div class="project-grid">
+                        <div class="project" onclick="openProjectModal('project2')">
+                            <h3>ITA Profiles</h3>
+                            <p>Descripción breve</p>
+                        </div>
+                        <div class="project" onclick="openProjectModal('project1')">
+                            <h3>Dice API</h3>
+                            <p>Descripción breve</p>
+                        </div>
+                       
+
+                    </div>
+                </div>
+                <div id="experience" class="section" style="display: none;">
+                    <h2>Experiencia</h2>
+                    <p>Descripción de la experiencia</p>
+                    <ul>
+                        <li> Trabajo 1</li>
+                        <li>Trabajo 2</li>
+                        <li>Trabajo 3</li>
+                    </ul>
+                </div>
+                <div id="studies" class="section" style="display: none;">
+                    <h2>Estudios</h2>
+
+                    <nav class="submenu">
+                        <button onclick="showSubsection('bootcamps')">Cursos</button>
+                        <button onclick="showSubsection('certifications')">Certificaciones</button>
+                        <button onclick="showSubsection('Hackathon')">Hackathons</button>
+                    </nav>
+
+                    <div id="bootcamps" class="subsection">
+                        <div class="bootcamp-grid">
+
+                            <div class="study-item">
+                                <div class="study-summary">Curso de Desarrollo Web - Platzi</div>
+                                <div class="study-date">2021</div>
+                                <div class="study-skills">
+                                    <p><strong>Habilidades aprendidas:</strong></p>
+                                    <ul>
+                                        <li>HTML, CSS, JavaScript</li>
+                                        <li>Responsive Design</li>
+                                        <li>Version Control (Git)</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="study-item">
+                                <div class="study-summary">Curso de Desarrollo Web - Platzi</div>
+                                <div class="study-date">2021</div>
+                                <div class="study-skills">
+                                    <p><strong>Habilidades aprendidas:</strong></p>
+                                    <ul>
+                                        <li>HTML, CSS, JavaScript</li>
+                                        <li>Responsive Design</li>
+                                        <li>Version Control (Git)</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="study-item">
+                                <div class="study-summary">Curso de Desarrollo Web - Platzi</div>
+                                <div class="study-date">2021</div>
+                                <div class="study-skills">
+                                    <p><strong>Habilidades aprendidas:</strong></p>
+                                    <ul>
+                                        <li>HTML, CSS, JavaScript</li>
+                                        <li>Responsive Design</li>
+                                        <li>Version Control (Git)</li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div id="certifications" class="subsection" style="display: none;">
+                        <ul>
+                            <li>Certificación JavaScript - FreeCodeCamp - 2021</li>
+                            <li>Certificación React - Udemy - 2020</li>
+                        </ul>
+                    </div>
+                </div>
+                <div id="skills" class="section" style="display: none;">
+                    <h2>Habilidades</h2>
+                    <nav class="submenu">
+                        <button onclick="showSubsectionSkills('languages')">Lenguajes</button>
+                        <button onclick="showSubsectionSkills('frameworks')">Frameworks</button>
+                        <button onclick="showSubsectionSkills('databases')">BBDD</button>
+                        <button onclick="showSubsectionSkills('tools')">Tools</button>
+                    </nav>
+                    <div id="languages" class="subsection">
+                        <p>Descripción de lenguajes</p>
+                        <i class="fab fa-php"></i> PHP
+                        <i class="fab fa-java"></i> Java
+                    </div>
+                    <div id="frameworks" class="subsection" style="display: none;">
+                        <p>Descripción demicrosoftameworks</p>
+                        <i class="fab fa-laravel"></i> Laravel
+                        <i class="fab fa-java"></i> Spring
+                    </div>
+                    <div id="databases" class="subsection" style="display: none;">
+                        <p>Descripción de Bases de datos</p>
+                        <i class="fas fa-database"></i> MySQL
+                        <i class="fas fa-database"></i> PostgreSQL
+                    </div>
+                    <div id="tools" class="subsection" style="display: none;">
+                        <p>Descripción de Herramientas</p>
+                        <i class="fab fa-git"></i> Git
+                        <i class="fab fa-github"></i> GitHub
+                        <i class="fab fa-microsoft"></i> VSCode
+                        <i class="fab fa-docker"></i> Docker
+                    </div>
+                </div>
+                <div id="contact" class="section" style="display: none;">
+                    <h2>Contacto</h2>
+                    <div class="contact-icons">
+                        <a href="mailto:petersonsena24@gmail.com">
+                            <img src="https://simpleicons.org/icons/gmail.svg" alt="Email">
+                        </a>
+                        <a href="https://www.linkedin.com/in/peterson-sena" target="_blank">
+                            <img src="https://simpleicons.org/icons/linkedin.svg" alt="LinkedIn">
+                        </a>
+                        <a href="https://github.com/pupadevs" target="_blank">
+                            <img src="https://simpleicons.org/icons/github.svg" alt="GitHub">
+                        </a>
+                        <a href="https://discord.com/users/usuario" target="_blank">
+                            <img src="https://simpleicons.org/icons/discord.svg" alt="Discord">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Modal-->
+    <div class="modal" id="projectModal">
+        <div class="window">
+            <div class="title-bar">
+                <div class="title-bar-text" id="modalTitle">Detalles del Proyecto</div>
+                <div class="title-bar-controls">
+                    <button aria-label="Close" onclick="closeProjectModal()">×</button>
+                </div>
+            </div>
+            <div class="window-body" id="modalContent">
+                <!-- Contenido del modal se llena dinámicamente -->
+            </div>
+        </div>
+    </div>
+    <!-- Barra de tareas estilo Windows 95 -->
+    <footer class="taskbar">
+        <div class="start-button" onclick="toggleStartMenu()">
+            <img src="https://win98icons.alexmeub.com/icons/png/windows-0.png" alt="Start">
+            <span>Start</span>
+        </div>
+        <div class="copyright">&copy; 2024 By Peterson Sena
+            <i class="fab fa-"></i>
+        </div>
+        <div class="start-menu" id="startMenu">
+            <ul>
+                <li><img src="https://win98icons.alexmeub.com/icons/png/shell_window6-1.png" alt="Programs"> Programs
+                </li>
+                <li><img src="https://win98icons.alexmeub.com/icons/png/directory_open_file_mydocs-5.png"
+                        alt="Documents"> Documents</li>
+                <li><img src="https://win98icons.alexmeub.com/icons/png/gears_tweakui_a-1.png" alt="Settings"> Settings
+                </li>
+                <li><img src="https://win98icons.alexmeub.com/icons/png/search_directory-0.png" alt="Find"> Find</li>
+                <li><img src="https://win98icons.alexmeub.com/icons/png/help_question_mark-0.png" alt="Help"> Help</li>
+                <li><img src="https://win98icons.alexmeub.com/icons/png/key_win-2.png" alt="Log Off"> Log Off</li>
+                <li><img src="https://win98icons.alexmeub.com/icons/png/shut_down_cool-5.png" alt="Shut Down"> Shut Down
+                </li>
+            </ul>
+        </div>
+        <div class="taskbar-time">
+            <span id="taskbarClock">12:00 AM</span>
+        </div>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+
+</html>

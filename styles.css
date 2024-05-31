@@ -1,0 +1,409 @@
+body {
+    font-family: 'MS Sans Serif', Tahoma, sans-serif;
+    background-color: #008080;
+    color: black;
+    margin: 0;
+    padding: 20px;
+    background-image: 
+    url('https://win98icons.alexmeub.com/icons/png/help_question_mark-0.png'), 
+    url('https://win98icons.alexmeub.com/icons/png/help_book_cool-4.png'), 
+    url('https://win98icons.alexmeub.com/icons/png/recycle_bin_empty-4.png'), 
+    url(''), 
+    url(''), 
+    url(''),
+    url('https://win98icons.alexmeub.com/icons/png/briefcase-4.png'), 
+    url('https://win98icons.alexmeub.com/icons/png/inbox-4.png'), 
+    url('https://win98icons.alexmeub.com/icons/png/media_player-4.png'),
+    url('https://win98icons.alexmeub.com/icons/png/outlook-4.png'),
+    url('https://win98icons.alexmeub.com/icons/png/printer-4.png'), 
+    url('https://win98icons.alexmeub.com/icons/png/scan-4.png'),
+    url('https://win98icons.alexmeub.com/icons/png/shutdown-4.png'), 
+    url('https://win98icons.alexmeub.com/icons/png/wordpad-4.png'), 
+    url('https://win98icons.alexmeub.com/icons/png/write-4.png'),
+    url('https://win98icons.alexmeub.com/icons/png/mspaint-4.png'), 
+    url('https://win98icons.alexmeub.com/icons/png/cd-4.png'), 
+    url(''), 
+    url('https://win98icons.alexmeub.com/icons/png/iexplore-4.png'),
+    url('https://win98icons.alexmeub.com/icons/png/notepad-4.png');
+    background-repeat: no-repeat;
+    background-position: 
+    1% 1%, 1% 10%, 1% 20%, 
+    1% 30%, 1% 99%, 12% 60%, 
+    1% 30%, 1% 50%, 1% 40%, 
+    12% 50%, 1% 1000%, 60% 85%, 
+    12% 70%, 1% 700%, 1% 70%, 
+    12% 60%, 12% 75%, 1% 60%, 
+    12% 35%, 1% 40%;
+}
+.window {
+    width: 600px;
+    background: silver;
+    border: 2px solid black;
+    padding: 10px;
+    box-shadow: 5px 5px 0 #000;
+    margin: auto;
+    position: relative;
+    display: flex; 
+    flex-direction: column;
+}
+
+.maximized {
+    width: 100% !important;
+    height: 100% !important;
+    position: fixed;
+    top: 0;
+    left: 0;
+    margin: 0;
+    padding: 0;
+    box-shadow: none;
+    border: none;
+}
+
+
+.title-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgb(0, 0, 192);
+    color: white;
+    padding: 3px;
+    font-size: 14px;
+}
+
+.title-bar-controls button {
+    width: 20px;
+    height: 18px;
+    margin-left: 2px;
+    background: lightgray;
+    border: 1px solid black;
+    font-size: 10px;
+    line-height: 18px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.window-body {
+    padding: 8px;
+    background: white;
+    border: 2px solid black;
+    
+}
+
+.menu {
+    margin-bottom: 20px;
+}
+
+.menu button {
+    font-family: 'MS Sans Serif', Tahoma, sans-serif;
+    margin-right: 10px;
+    padding: 5px;
+    background: lightgray;
+    border: 1px solid black;
+    cursor: pointer;
+}
+
+.section {
+    display: none;
+    height: 530px;
+    overflow-y: auto;
+}
+
+.section h2 {
+    margin-top: 0;
+}
+
+.minimized {
+    display: none;
+}
+.about-details p {
+    margin: 30px 0;
+    font-family: 'Press Start 2P', cursive;
+
+}
+.about-photo img {
+    width: 20%;
+    height: auto;
+}
+
+.project-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+}
+.bootcamp-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 8px;
+}
+
+.project {
+    background: lightgray;
+    border: 2px solid black;
+    padding: 10px;
+    cursor: pointer;
+    text-align: center;
+}
+
+.project:hover {
+    background: silver;
+}
+#studies .study-item:hover {
+    background: rgb(160, 160, 160);
+}
+
+#studies .study-item {
+    border: 2px solid black;
+    padding: 10px;
+    margin: 10px 0;
+    background: lightgray;
+    cursor: pointer;
+}
+.study-summary {
+    font-weight: bold;
+}
+
+.study-date {
+    font-style: italic;
+    color: darkblue;
+}
+
+.study-skills {
+    margin-top: 4px;
+}
+
+.contact-icons {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+.submenu button {
+
+    margin-right: 10px;
+    padding: 5px;
+    background: lightgray;
+    border: 1px solid black;
+    cursor: pointer;
+}
+
+#studies .subsection {
+    display: flex;
+    flex-grow: 1;
+    flex-direction: column;
+   
+    
+}
+#skills .submenu{
+    display: flex;
+    flex-direction:row;
+}
+.contact-icons img {
+    width: 40px;
+    height: 40px;
+}
+
+
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+}
+
+.modal .window {
+    width: 400px;
+}
+
+#modalContent {
+    padding: 10px;
+    background: white;
+    border: 2px solid black;
+}
+
+ 
+
+
+
+
+
+/* Estilos para la barra de tareas */
+.taskbar {
+    position: fixed;
+    bottom: 0;
+    right: 1px;
+    left: 1px;
+    width: 100%;
+    height: 40px;
+    background: silver;
+    border-top: 2px solid black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 px;
+    box-sizing: border-box;
+}
+
+
+.start-button {
+    display: flex;
+    align-items:center;
+    background: lightgray;
+    border: 2px outset;
+    padding: 0 10px;
+    height: 28px;
+    cursor: pointer;
+}
+
+.start-button img {
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+}
+
+.start-button span {
+    font-family: 'MS Sans Serif', Tahoma, sans-serif;
+    font-size: 14px;
+}
+.start-menu {
+    display: none;
+    position: fixed;
+    bottom: 40px;
+    left: 0;
+    width: 200px;
+    background: lightgray;
+    border: 2px solid black;
+    z-index: 1000;
+    font-family: 'MS Sans Serif', Tahoma, sans-serif;
+    font-size: 14px;
+}
+
+.start-menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.start-menu ul li {
+    display: flex;
+    align-items: center;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.start-menu ul li:hover {
+    background: navy;
+    color: white;
+}
+
+.start-menu ul li img {
+    width: 16px;
+    height: 16px;
+    margin-right: 10px;
+}
+
+.taskbar-time {
+    font-family: 'MS Sans Serif', Tahoma, sans-serif;
+    font-size: 14px;
+    background: lightgray;
+    border: 2px inset;
+    padding: 0 5px;
+    height: 28px;
+    display: flex;
+    align-items: center;
+}
+.copyright {
+    font-family: 'MS Sans Serif', Tahoma, sans-serif;
+    font-size: 14px;
+    padding: 0 5px;
+    height: 28px;
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Asegura que el contenido esté centrado */
+    text-align: center; /* Alinea el texto al centro */
+    width: 100%; /* Asegura que ocupe el 100% del contenedor */
+    box-sizing: border-box; /* Incluye el padding en el tamaño total */
+    overflow-wrap: break-word; /* Permite el quiebre de línea en palabras largas */
+    white-space: normal; /* Asegura que el texto se ajuste y se quiebre */
+    flex-direction: column; /* Alinea el contenido verticalmente */
+}
+
+
+
+@media (max-width: 600px) {
+    .about{
+        display: flex;
+        flex-wrap:wrap;
+       
+      
+       
+    }
+    .about img {
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+        
+    }
+    .about-text {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+     
+        
+    }
+    .about-text h1 {
+        margin: 0;
+        padding: 0;
+    }
+    .about-text p {
+        margin: 0;
+        padding: 0;
+    }
+   
+    .about-details {
+        margin-left: 0;
+        margin-top: 10px;
+        text-align: left;
+       
+    }
+    #projectModal {
+     width: 90%;
+     max-width: 90%;
+ }
+   #modalContent {
+    justify-content: center;
+  
+    
+   
+   }  
+    
+     .window {
+         width: 100%;
+         height: 100%;
+         position: fixed;
+         top: 0;
+         left: 0;
+         margin: 0;
+         padding: 0;
+         box-shadow: none;
+         border: none;
+     }
+     .menu {
+         display: flex;
+         
+         flex-direction:column-reverse;
+      
+        
+     }
+     .menu button {
+         font-size: 12px;
+         margin: 4px; 
+ 
+     }
+  
+ }
+
