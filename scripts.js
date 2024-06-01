@@ -1,3 +1,9 @@
+let progress = 0;
+const speedElement = document.getElementById('speed');
+const downloadedElement = document.getElementById('downloaded');
+const progressFill = document.getElementById('progress-fill');
+const totalMB = 50;
+
 document.addEventListener("DOMContentLoaded", function() {
     // Maximizar la ventana por defecto en pantallas pequeñas
     if (window.innerWidth <= 600) {
@@ -21,6 +27,34 @@ document.addEventListener("DOMContentLoaded", function() {
     // Actualizar el reloj inmediatamente y luego cada minuto
     updateClock();
     setInterval(updateClock, 60000);
+
+   
+
+    function simulateDownload() {
+        if (progress < totalMB) {
+            const speed = Math.random() * 2 + 1; // Simula una velocidad de 1 a 3 MB/s
+            progress += speed;
+            if (progress > totalMB) {
+                progress = totalMB;
+            }
+            speedElement.textContent = speed.toFixed(2) + ' MB/s';
+            downloadedElement.textContent = progress.toFixed(2) + ' MB';
+            progressFill.style.width = (progress / totalMB * 100) + '%';
+
+            setTimeout(simulateDownload, 1000);
+        } else {
+            speedElement.textContent = '0 KB/s';
+            closeWindow();
+        }
+    }
+
+    function closeWindow() {
+        const downloadWindow = document.getElementById('download-window');
+        downloadWindow.style.display = 'none';
+    }
+
+    simulateDownload();
+    
 });
 
 function showSection(sectionId) {
