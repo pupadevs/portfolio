@@ -11,11 +11,9 @@
 </head>
 
 <body>
-    <div class="download">
-        
-    </div>
+   
     <div class="window" id="cvWindow">
-        
+
         <div class="title-bar">
             <div class="title-bar-text">Peterson Sena</div>
             <div class="title-bar-controls">
@@ -35,26 +33,10 @@
             </nav>
             <div id="content">
                 <div id="about" class="section">
-                    <h2>Sobre mí</h2>
-                    <div class="about-container">
-                        <div class="about-photo">
-                            <img src="img/petercover.jpg" alt="Foto de Perfil">
-                        </div>
-                        <div class="about-details">
-
-                            <p>Programador PHP con experiencia previa como creador de videoclips musicales. Me reinventé hacia la programación, un mundo que siempre me ha cautivado desde mi primer encuentro con MS-DOS en 1995. Fusiono mi experiencia en la creación audiovisual con la programación para desarrollar soluciones innovadoras en este emocionante campo. Estoy siempre abierto a conocer nuevas tecnologías y aprender nuevas formas de lograr un código limpio y consistente. Disfruto sumergirme en desafios, son oportunidades para crecer y superarme constamente</p>
-                           <!--  <p>Mi historia no es convencional. Después de un tiempo como cineasta independiente durante
-                                cinco años, me reinventé varias veces. Esta versatilidad y capacidad de adaptación son
-                                rasgos que me distinguen. Ahora, como desarrollador, me especializo en crear soluciones
-                                robustas y escalables, enfocándome en el rendimiento óptimo y siguiendo las mejores
-                                prácticas de desarrollo y pruebas.</p> -->
-
-                            <button onclick="downloadCV()">Descargar CV</button>
-                        </div>
-                    </div>
+                  
+                   
                 </div>
                 <div id="projects" class="section" style="display: none;">
-                    <h2>Proyectos</h2>
                     <div class="project-grid">
                         <div class="project" onclick="openProjectModal('project2')">
                             <h3>ITA Profiles</h3>
@@ -64,74 +46,25 @@
                             <h3>Dice API</h3>
                             <p>Descripción breve</p>
                         </div>
-                       
+
 
                     </div>
                 </div>
                 <div id="experience" class="section" style="display: none;">
-                    <h2>Experiencia</h2>
-                    <p>Descripción de la experiencia</p>
-                    <ul>
-                        <li> Trabajo 1</li>
-                        <li>Trabajo 2</li>
-                        <li>Trabajo 3</li>
-                    </ul>
+                  
                 </div>
                 <div id="studies" class="section" style="display: none;">
-                    <h2>Estudios</h2>
+                    <div id="study-menu" class="submenu-container">
 
-                    <nav class="submenu">
-                        <button onclick="showSubsection('bootcamps')">Cursos</button>
-                        <button onclick="showSubsection('certifications')">Certificaciones</button>
-                        <button onclick="showSubsection('Hackathon')">Hackathons</button>
-                    </nav>
+                        <nav class="submenu">
+                            <button onclick="showSubsection('bootcamps')">Cursos</button>
+                            <button onclick="showSubsection('certifications')">Certificaciones</button>
+                            <button onclick="showSubsection('Hackathon')">Hackathons</button>
+                        </nav>
+                    </div>
 
                     <div id="bootcamps" class="subsection">
-                        <div class="bootcamp-grid">
-
-                            <div class="study-item">
-                                <div class="study-summary">Boot Camp Full Stack PHP</div>
-                                <div class="studycenter">IT Academy Barcelona Activa</div>
-                                <div class="study-date">03/23 - 09/2023</div>
-                                <div class="study-skills">
-                                    <p><strong>Habilidades aprendidas:</strong></p>
-                                    <ul>
-                                        <li>PHP, Laravel, MySQL</li>
-                                        <li>HTML, CSS</li>
-                                        <li>Git, XAMPP</li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="study-item">
-                                <div class="study-summary">Curso de Desarrollo Web - Platzi</div>
-                                <div class="studycenter">IT Academy Barcelona Activa</div>
-
-                                <div class="study-date">2021</div>
-                                <div class="study-skills">
-                                    <p><strong>Habilidades aprendidas:</strong></p>
-                                    <ul>
-                                        <li>HTML, CSS, JavaScript</li>
-                                        <li>Responsive Design</li>
-                                        <li>Version Control (Git)</li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="study-item">
-                                <div class="study-summary">Curso de Desarrollo Web - Platzi</div>
-                                <div class="studycenter">IT Academy Barcelona Activa</div>
-
-                                <div class="study-date">2021</div>
-                                <div class="study-skills">
-                                    <p><strong>Habilidades aprendidas:</strong></p>
-                                    <ul>
-                                        <li>HTML, CSS, JavaScript</li>
-                                        <li>Responsive Design</li>
-                                        <li>Version Control (Git)</li>
-                                    </ul>
-                                </div>
-                            </div>
-
-                        </div>
+                       
                     </div>
                     <div id="certifications" class="subsection" style="display: none;">
                         <ul>
@@ -165,18 +98,30 @@
                     </div>
                     <div id="tools" class="subsection" style="display: none;">
                         <p>Descripción de Herramientas</p>
-                        <i class="fab fa-git"></i> Git
-                        <i class="fab fa-github"></i> GitHub
-                        <i class="fab fa-microsoft"></i> VSCode
-                        <i class="fab fa-docker"></i> Docker
+                        <div class="tools-list">
+                            <div class="tool-item"><i class="fab fa-git"></i> Git</div>
+                            <div class="tool-item"><i class="fab fa-github"></i> GitHub</div>
+                            <div class="tool-item"><i class="fab fa-microsoft"></i> VSCode</div>
+                            <div class="tool-item"><i class="fab fa-docker"></i> Docker</div>
+                            <div class="tool-item"><i class="fab fa-java"></i> IntelliJ IDEA</div>
+                            <div class="tool-item"><i class="fab fa-java"></i> Eclipse</div>
+                            <div class="tool-item"><i class="fab fa-microsoft"></i> Visual Studio</div>
+                            <div class="tool-item"><i class="fas fa-database"></i> MySQL Workbench</div>
+                            <div class="tool-item"><i class="fas fa-server"></i> phpMyAdmin</div>
+                            <div class="tool-item"><i class="fas fa-cogs"></i> XAMPP</div>
+                            <div class="tool-item"><i class="fas fa-flask"></i> Postman</div>
+                            <div class="tool-item"><i class="fas fa-terminal"></i> Bash</div>
+                            <div class="tool-item"><i class="fas fa-cube"></i> Composer</div>
+                            <div class="tool-item"><i class="fas fa-cogs"></i> Maven</div>
+                            <div class="tool-item"><i class="fas fa-server"></i> Apache</div>
+                        </div>
                     </div>
+                    
                 </div>
                 <div id="contact" class="section" style="display: none;">
                     <h2>Contacto</h2>
                     <div class="contact-icons">
-                        <a href="mailto:petersonsena24@gmail.com">
-                            <img src="https://simpleicons.org/icons/gmail.svg" alt="Email">
-                        </a>
+                        
                         <a href="https://www.linkedin.com/in/peterson-sena" target="_blank">
                             <img src="https://simpleicons.org/icons/linkedin.svg" alt="LinkedIn">
                         </a>
@@ -231,7 +176,8 @@
         </div>
         <div class="taskbar-time">
             <span id="taskbarClock">12:00 AM</span>
-            <span id="taskbarVolume"><img src="https://win98icons.alexmeub.com/icons/png/loudspeaker_rays-0.png" alt=""></span>
+            <span id="taskbarVolume"><img src="https://win98icons.alexmeub.com/icons/png/loudspeaker_rays-0.png"
+                    alt=""></span>
         </div>
     </footer>
 
