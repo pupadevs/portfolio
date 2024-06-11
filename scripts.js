@@ -39,7 +39,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
 function downloadCV() {
     const downloadLink = document.createElement("a");
-    downloadLink.href = "docs/CV_Peterson_Sena.pdf";
+    downloadLink.href = "docs/Peterson_Sena_CV.pdf";
     downloadLink.download = "CV_Peterson_Sena.pdf";
     downloadLink.click();
 }
@@ -164,13 +164,8 @@ experience:`
         </ul>
         <p><strong>Habilidades blandas:</strong></p>
         <ul>
-            <li>Comunicación efectiva</li>
-            <li>Gestión del tiempo</li>
             <li>Resolución de problemas</li>
-            <li>Creatividad</li>
             <li>Trabajo en equipo</li>
-            <li>Adaptabilidad</li>
-            <li>Atención al detalle</li>
             <li>Pensamiento crítico</li>
             <li>Capacidad de aprendizaje continuo</li>
         </ul>
@@ -185,9 +180,7 @@ experience:`
 <ul>
     <li>Comunicación efectiva</li>
     <li>Gestión del tiempo</li>
-    <li>Resolución de problemas</li>
     <li>Creatividad</li>
-    <li>Trabajo en equipo</li>
     <li>Adaptabilidad</li>
     <li>Atención al detalle</li>
 </ul>
