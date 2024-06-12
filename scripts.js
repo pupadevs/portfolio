@@ -109,8 +109,8 @@ function openProjectModal(projectId) {
             title: 'Dice API Game',
             description: 'Backend De una API REST para un juego de dados. Hecha en laravel, utilizando Laravel Passport para autenticación, Spatie Permission para la gestion de roles y permisos.',
             technologies: 'PHP, Laravel, MySQL',
-            github: 'https://github.com/usuario/proyecto1',
-            demo: 'https://usuario.github.io/proyecto1'
+            github: 'https://github.com/pupadevs/diceGameAPI',
+            demo: 'https://dicegameapi.fly.dev/'
         },
         project2: {
             title: 'ITA Profiles Back End',
@@ -149,7 +149,9 @@ const aboutContent = `
     <div class="about-details">
         <button class="download-cv" onclick="downloadCV()">Descargar CV</button>
      
-        <p>Programador PHP con experiencia previa como creador de videoclips musicales. Me reinventé hacia la programación, un mundo que siempre me ha cautivado desde mi primer encuentro con MS-DOS en 1995. Fusiono mi experiencia en la creación audiovisual con la programación para desarrollar soluciones innovadoras en este emocionante campo. Estoy siempre abierto a conocer nuevas tecnologías y aprender nuevas formas de lograr un código limpio y consistente. Disfruto sumergirme en desafios, son oportunidades para crecer y superarme constamente</p>
+        <p>Soy programador PHP con una pasión que se remonta a mis primeros días explorando MS-DOS en 1995. Me he enfocado en el desarrollo backend, donde cada línea de código es una oportunidad para poder aprender y mejorar.</p>
+        <p>Admito que estoy en una etapa inicial de mi carrera, me considero un junior muy curioso. Me entusiasma enfrentarme a nuevos retos y encontrar soluciones que no solo funcionen, sino que también sean eficientes. Disfruto del proceso de perfeccionar mi código y siempre busco maneras de hacerlo más limpio y mantenible.</p>
+       
     </div>
 </div>
 `;
