@@ -5,6 +5,7 @@ body {
     margin: 10px;
     padding: 10px;
     display: flex;
+    font-size: 13px;
  
     background-image: 
     url('https://win98icons.alexmeub.com/icons/png/help_question_mark-0.png'), 
@@ -14,28 +15,28 @@ body {
     url(''), 
     url(''),
     url('https://win98icons.alexmeub.com/icons/png/briefcase-4.png'), 
-    url('https://win98icons.alexmeub.com/icons/png/inbox-4.png'), 
-    url('https://win98icons.alexmeub.com/icons/png/media_player-4.png'),
-    url('https://win98icons.alexmeub.com/icons/png/outlook-4.png'),
-    url('https://win98icons.alexmeub.com/icons/png/printer-4.png'), 
-    url('https://win98icons.alexmeub.com/icons/png/scan-4.png'),
-    url('https://win98icons.alexmeub.com/icons/png/shutdown-4.png'), 
-    url('https://win98icons.alexmeub.com/icons/png/wordpad-4.png'), 
-    url('https://win98icons.alexmeub.com/icons/png/write-4.png'),
-    url('https://win98icons.alexmeub.com/icons/png/mspaint-4.png'), 
-    url('https://win98icons.alexmeub.com/icons/png/cd-4.png'), 
     url(''), 
-    url('https://win98icons.alexmeub.com/icons/png/iexplore-4.png'),
+    url(''),
+    url(''),
+    url(''), 
+    url(''),
+    url(''), 
+    url(''), 
+    url(''),
+    url(''), 
+    url(''), 
+    url(''), 
+    url('https://win98icons.alexmeub.com/icons/png/msie2-2.png'),
     url('https://win98icons.alexmeub.com/icons/png/notepad-4.png');
     background-repeat: no-repeat;
     background-position: 
     1% 1%, 1% 10%, 1% 20%, 
     1% 30%, 1% 99%, 12% 60%, 
     1% 30%, 1% 50%, 1% 40%, 
-    12% 50%, 1% 1000%, 60% 85%, 
+    1% 40%, 1% 60%, 60% 85%, 
     12% 70%, 1% 700%, 1% 70%, 
     12% 60%, 12% 75%, 1% 60%, 
-    12% 35%, 1% 40%;
+    1% 48%, 1% 40%;
 }
 .window {
     width: 600px;
@@ -142,6 +143,7 @@ body {
 }
 .about-details p {
     margin: 2px 0;
+    font-size: 18px;
     text-align: justify;
 
 }
@@ -160,18 +162,22 @@ body {
     margin-right: 14px;
 }
 .about-photo img {
-    width:20%; /* Ajusta según sea necesario */
+    width:16%; /* Ajusta según sea necesario */
     height: auto;
     border: 2px solid black;
 }
 .contact-details {
     display: flex;
-    gap: 10px; /* Ajusta el espacio entre los iconos */
-    margin-top: 6px; /* Ajusta el espacio superior si es necesario */
-    margin-bottom: 8px;
+    gap: 30px; /* Ajusta el espacio entre los iconos */
    width: 100%;
-   font-size: 20px;
+   height: 100%;
+   flex-wrap: wrap;
    justify-content: center;
+}
+.contact-details i {
+    margin: 14px;
+    font-size: 20px;
+    
 }
 
 .contact-details a {
@@ -190,7 +196,6 @@ body {
     font-size: 16px;
     margin: 4px 0;
     cursor: pointer;
-    font-family: 'MS Sans Serif', Tahoma, sans-serif;
 }
 
 .download-cv:hover {
@@ -296,6 +301,8 @@ body {
     grid-template-columns: 1fr 1fr;
     gap: 8px;
     margin-top: 10px;
+
+    
 
 }
 .cert-grid {
@@ -423,7 +430,6 @@ body {
 }
 
 .start-button span {
-    font-family: 'MS Sans Serif', Tahoma, sans-serif;
     font-size: 14px;
 }
 .start-menu {
@@ -435,7 +441,6 @@ body {
     background: lightgray;
     border: 2px solid black;
     z-index: 1000;
-    font-family: 'MS Sans Serif', Tahoma, sans-serif;
     font-size: 14px;
 }
 
@@ -464,11 +469,10 @@ body {
 }
 
 .taskbar-time {
-    font-family: 'MS Sans Serif', Tahoma, sans-serif;
     font-size: 14px;
     background: lightgray;
     border: 2px inset;
-    padding: 0 5px;
+    padding: 0 3px;
     height: 25px;
     width: 8%;
     display: flex;
@@ -481,7 +485,6 @@ body {
    width: 2px;
 }
 .copyright {
-    font-family: 'MS Sans Serif', Tahoma, sans-serif;
     font-size: 14px;
     padding: 0 5px;
     height: 28px;
@@ -496,13 +499,21 @@ body {
     flex-direction: column; /* Alinea el contenido verticalmente */
 }
 
-/*** MEDIA QUERIES ***/
+/*** MEDIA QUERIES ***//* 
+@media (max-width: 330px) {
+    #skills .submenu  {
+            display: flex;
+           flex-direction: column;
+   
+           flex-grow: 1; 
+       }
+   
+} */
 
 @media (max-width: 605px) {
     
     .window {
         width: 100%;
-        height: 100%;
         position: fixed;
         top: 0;
         left: 0;
@@ -520,7 +531,6 @@ body {
     }
     
     .menu button {
-        font-family: 'MS Sans Serif', Tahoma, sans-serif;
         padding-right: 10px;
         background: lightgray;
         border: 1px solid black;
@@ -550,21 +560,14 @@ body {
     margin-right: 20px;
 }
 
-    .about-text {
-        width: 100%;
-        margin: 0;
-        padding: 0;
-     
-        
-    }
-    .about-text h1 {
+   
+   
+    .about-details p {
+        font-size: 14px;
         margin: 0;
         padding: 0;
     }
-    .about-text p {
-        margin: 0;
-        padding: 0;
-    }
+    
    
     .about-details {
         margin-left: 0;
@@ -572,15 +575,95 @@ body {
         text-align: left;
        
     }
-    #projectModal {
-     width: 90%;
-     max-width: 90%;
- }
-   #modalContent {
-    justify-content: center;
+    .about-details button {
+        font-size: 12px;
+        margin-top: 2px;
+    }
+    .contact-details {
+        display: flex;
+        gap: 6px; /* Ajusta el espacio entre los iconos */
+        margin-top: 2px; /* Ajusta el espacio superior si es necesario */
+        margin-bottom: 4px;
+       width: 100%;
+       height: 100%;
+       
+       justify-content:space-around;
+    }
+
+    #skills {
+        display: flex;
+        flex-direction: row;
+        flex-grow: 2;
+       
+    }
+    .tools-list{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+       
+    }
+    
+    #skills .submenu  {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        flex-grow: 1; 
+    } 
+
+    #skills button {
+       
+        background: lightgray;
+        border: 1px solid black;
+        cursor: pointer;
+        font-size: 12px;
+        margin: 4px;
+    }
+    #studies {
+        display:block;
+        height: 100vh; /* O la altura deseada */
+        overflow-y: scroll;
+    }
+    .bootcamp-grid, .project-grid, .experience-grid, .cert-grid {
+        display: block;
+        height: 50vh; /* O la altura deseada */
+        overflow-y:scroll;
+    }
   
-   
-   }  
+
+    .bootcamp-grid .study-item, .project-grid .project, .experience-grid .experience-item, .cert-grid .cert-item {
+        /* Ajusta la altura de los ítems */
+        margin-bottom: 4px; /* Ajusta el margen entre ítems */
+    }
+    
+ 
+/*  */
+
+.modal .window {
+    top: 350px;
+    width: 100%;
+    height: 100%;
+    background: none;
+    
+}
+
+#modalContent {
+    padding: 10px;
+    background: white;
+    border: 2px solid black;
+}
+.copyright {
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+    font-size:5vw;
+  
+  
+}
+.copyright i{
+    padding: 0 5px;
+    flex-wrap: wrap
+}
    .taskbar-time {
     font-size: 10px;
     background: lightgray;
@@ -593,6 +676,27 @@ body {
     
 
   
+ }
+
+ @media (min-width: 606px)  {
+    .taskbar-time {
+        font-size: 10px;
+        background: rgb(185, 185, 185);
+        border: 2px inset;
+        padding: 0 5px;
+        height: 26px;
+        width: 7%;
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+    }
+    
+#taskbarVolume {
+    display: flex;
+   padding: 0 10px;
+   height: 40%;
+   width: 2px;
+}
  }
 
 

@@ -1,79 +1,80 @@
 let progress = 0;
-const speedElement = document.getElementById('speed');
-const downloadedElement = document.getElementById('downloaded');
-const progressFill = document.getElementById('progress-fill');
+const speedElement = document.getElementById("speed");
+const downloadedElement = document.getElementById("downloaded");
+const progressFill = document.getElementById("progress-fill");
 const totalMB = 50;
 
-document.addEventListener("DOMContentLoaded", function() {
-    // Maximizar la ventana por defecto en pantallas pequeñas
-    if (window.innerWidth <= 600) {
-        document.getElementById("cvWindow").classList.add("maximized");
-       
-    }
-    function updateClock() {
-        const now = new Date();
-        let hours = now.getHours();
-        let minutes = now.getMinutes();
-        const ampm = hours >= 12 ? 'PM' : 'AM';
+document.addEventListener("DOMContentLoaded", function () {
+  // Maximizar la ventana por defecto en pantallas pequeñas
+  if (window.innerWidth <= 600) {
+    document.getElementById("cvWindow").classList.add("maximized");
+  }
+  function updateClock() {
+    const now = new Date();
+    let hours = now.getHours();
+    let minutes = now.getMinutes();
+    const ampm = hours >= 12 ? "PM" : "AM";
 
-        hours = hours % 12;
-        hours = hours ? hours : 12; // El reloj de 12 horas no tiene "00" horas
-        minutes = minutes < 10 ? '0' + minutes : minutes;
+    hours = hours % 12;
+    hours = hours ? hours : 12; // El reloj de 12 horas no tiene "00" horas
+    minutes = minutes < 10 ? "0" + minutes : minutes;
 
-        const timeString = `${hours}:${minutes} ${ampm}`;
-        document.getElementById('taskbarClock').textContent = timeString;
-    }
+    const timeString = `${hours}:${minutes} ${ampm}`;
+    document.getElementById("taskbarClock").textContent = timeString;
+  }
 
-    // Actualizar el reloj inmediatamente y luego cada minuto
-    updateClock();
-    setInterval(updateClock, 60000);
+  // Actualizar el reloj inmediatamente y luego cada minuto
+  updateClock();
+  setInterval(updateClock, 60000);
 
-
-    function closeWindow() {
-        const downloadWindow = document.getElementById('download-window');
-        downloadWindow.style.display = 'none';
-    }
-
-       
+  function closeWindow() {
+    const downloadWindow = document.getElementById("download-window");
+    downloadWindow.style.display = "none";
+  }
 });
 
 function downloadCV() {
-    const downloadLink = document.createElement("a");
-    downloadLink.href = "docs/Peterson_Sena_CV.pdf";
-    downloadLink.download = "CV_Peterson_Sena.pdf";
-    downloadLink.click();
+  const downloadLink = document.createElement("a");
+  downloadLink.href = "docs/Peterson_Sena_CV.pdf";
+  downloadLink.download = "CV_Peterson_Sena.pdf";
+  downloadLink.click();
 }
 
 function showSection(sectionId) {
-    const sections = document.querySelectorAll('.section');
-    sections.forEach(section => {
-        section.style.display = 'none';
-    });
-    document.getElementById(sectionId).style.display = 'block';
+  const sections = document.querySelectorAll(".section");
+  sections.forEach((section) => {
+    section.style.display = "none";
+  });
+  document.getElementById(sectionId).style.display = "block";
 }
 
 // Mostrar la sección "Sobre mí" por defecto
-document.addEventListener('DOMContentLoaded', () => {
-    showSection('about');
-    
+document.addEventListener("DOMContentLoaded", () => {
+  showSection("about");
 });
 
+/* document.addEventListener('DOMReady', () => {
+    showSubsectionSkills('softskills');
+    
+});
+ */
 function minimizeWindow() {
-    document.getElementById('cvWindow').classList.add('minimized');
+  document.getElementById("cvWindow").classList.add("minimized");
 }
 
 function toggleStartMenu() {
-    const startMenu = document.getElementById("startMenu");
-    startMenu.style.display = startMenu.style.display === "block" ? "none" : "block";
+  const startMenu = document.getElementById("startMenu");
+  startMenu.style.display =
+    startMenu.style.display === "block" ? "none" : "block";
 }
 
 function maximizeWindow() {
-    const windowElement = document.getElementById('cvWindow');
-    if (windowElement.classList.contains('maximized')) {
-        windowElement.classList.remove('maximized');
-    } else {
-        windowElement.classList.add('maximized');
-    }
+  const windowElement = document.getElementById("cvWindow");
+  if (windowElement.classList.contains("maximized")) {
+    windowElement.classList.remove("maximized");
+  } else {
+    windowElement.classList.add("maximized");
+  }
 }
 
 /* function closeWindow() {
@@ -81,62 +82,64 @@ function maximizeWindow() {
 } */
 
 function showSubsection(subsectionId) {
-    const subsections = document.querySelectorAll('#studies .subsection');
-    subsections.forEach(subsection => {
-        subsection.style.display = 'none';
-    });
-    document.getElementById(subsectionId).style.display = 'block';
-    document.getElementById('studies').style.display = 'block'; // Ensure the main section is also displayed
+  const subsections = document.querySelectorAll("#studies .subsection");
+  subsections.forEach((subsection) => {
+    subsection.style.display = "none";
+  });
+  document.getElementById(subsectionId).style.display = "block";
+  document.getElementById("studies").style.display = "block"; // Ensure the main section is also displayed
 }
 
 function showSubsectionSkills(subsectionId) {
-    const subsections = document.querySelectorAll('#skills .subsection');
-    subsections.forEach(subsection => {
-        subsection.style.display = 'none';
-    });
-    document.getElementById(subsectionId).style.display = 'block';
-    document.getElementById('skills').style.display = 'block'; // Ensure the main section is also displayed
+  const subsections = document.querySelectorAll("#skills .subsection");
+  subsections.forEach((subsection) => {
+    subsection.style.display = "none";
+  });
+  document.getElementById(subsectionId).style.display = "block";
+  document.getElementById("skills").style.display = "block"; // Ensure the main section is also displayed
 }
 
 function openProjectModal(projectId) {
-    const modal = document.getElementById('projectModal');
-    const modalContent = document.getElementById('modalContent');
-    const modalTitle = document.getElementById('modalTitle');
+  const modal = document.getElementById("projectModal");
+  const modalContent = document.getElementById("modalContent");
+  const modalTitle = document.getElementById("modalTitle");
 
-    // Información del proyecto (puedes cambiar esto por datos dinámicos)
-    const projectDetails = {
-        project1: {
-            title: 'Dice API Game',
-            description: 'Backend De una API REST para un juego de dados. Hecha en laravel, utilizando Laravel Passport para autenticación, Spatie Permission para la gestion de roles y permisos.',
-            technologies: 'PHP, Laravel, MySQL',
-            github: 'https://github.com/pupadevs/diceGameAPI',
-            demo: 'https://dicegameapi.fly.dev/'
-        },
-        project2: {
-            title: 'ITA Profiles Back End',
-            description: 'API REST para la gestión de estudiantes con empresas del IT Academy de Barcelona Activa, colaborando como programador back-end',
-            technologies: 'PHP, Laravel, MySQL, Swagger',
-            github: 'https://github.com/IT-Academy-BCN/ita-profiles-backend',
-            demo: 'https://ita-profiles.netlify.app/'
-        }
-    };
+  // Información del proyecto (puedes cambiar esto por datos dinámicos)
+  const projectDetails = {
+    project1: {
+      title: "Dice API Game",
+      description:
+        "Backend De una API REST para un juego de dados. Hecha en laravel, utilizando Laravel Passport para autenticación, Spatie Permission para la gestion de roles y permisos.",
+      technologies: "PHP, Laravel, MySQL",
+      github: "https://github.com/pupadevs/diceGameAPI",
+      demo: "https://dicegameapi.fly.dev/",
+    },
+    project2: {
+      title: "ITA Profiles Back End",
+      description:
+        "API REST para la gestión de estudiantes con empresas del IT Academy de Barcelona Activa, colaborando como programador back-end",
+      technologies: "PHP, Laravel, MySQL, Swagger",
+      github: "https://github.com/IT-Academy-BCN/ita-profiles-backend",
+      demo: "https://ita-profiles.netlify.app/",
+    },
+  };
 
-    const project = projectDetails[projectId];
-    if (project) {
-        modalTitle.textContent = project.title;
-        modalContent.innerHTML = `
+  const project = projectDetails[projectId];
+  if (project) {
+    modalTitle.textContent = project.title;
+    modalContent.innerHTML = `
             <p><strong>Descripción:</strong> ${project.description}</p>
             <p><strong>Tecnologías:</strong> ${project.technologies}</p>
             <p><strong>GitHub:</strong> <a href="${project.github}" target="_blank">${project.github}</a></p>
             <p><strong>Demo:</strong> <a href="${project.demo}" target="_blank">${project.demo}</a></p>
         `;
-        modal.style.display = 'flex';
-    }
+    modal.style.display = "flex";
+  }
 }
 const aboutContent = `
 <div class="about-container">
     <div class="about-photo">
-        <img src="img/petercover.jpg" alt="Foto de Perfil">
+        <img src="img/petercovervga.jpg" alt="Foto de Perfil">
         <div class="contact-details">
         <a href="mailto:petesonsena24@gmail.com">
             <i class="fas fa-envelope"></i> 
@@ -150,15 +153,16 @@ const aboutContent = `
         <button class="download-cv" onclick="downloadCV()">Descargar CV</button>
      
         <p>Soy programador PHP con una pasión que se remonta a mis primeros días explorando MS-DOS en 1995. Me he enfocado en el desarrollo backend, donde cada línea de código es una oportunidad para poder aprender y mejorar.</p>
-        <p>Admito que estoy en una etapa inicial de mi carrera, me considero un junior muy curioso. Me entusiasma enfrentarme a nuevos retos y encontrar soluciones que no solo funcionen, sino que también sean eficientes. Disfruto del proceso de perfeccionar mi código y siempre busco maneras de hacerlo más limpio y mantenible.</p>
+    
+        <p>Admito que estoy en una etapa inicial de mi carrera, me considero un junior muy curioso. Me entusiasma enfrentarme a nuevos retos y encontrar soluciones que no solo funcionen, sino que también sean eficientes. </p>
        
     </div>
 </div>
 `;
-document.getElementById('about').innerHTML = aboutContent;
+document.getElementById("about").innerHTML = aboutContent;
 
-const experienceContent ={ 
-experience:`
+const experienceContent = {
+  experience: `
 <div class="experience-grid">
     <div class="experience-item">
         <div class="experience-summary">Programador Backend PHP</div>
@@ -196,68 +200,69 @@ experience:`
     </div>
 </div>
     </div>
-`};
+`,
+};
 
-document.getElementById('experience').innerHTML = experienceContent.experience;
+document.getElementById("experience").innerHTML = experienceContent.experience;
 
 const studiesContent = {
-    bootcamps: `
-        <div class="bootcamp-grid">
-        <div class="study-item">
-        <div class="study-summary">Bootcamp de Java </div>
-        <div class="studycenter">Alura - Oracle Next Education</div>
-        <div class="study-date">12/22 -present</div>
-        <div class="study-skills">
-            <p><strong>Habilidades aprendidas:</strong></p>
-            <ul>
-                <li>Java, OOP, PostgreSQL</li>
-                <li>Spring boot, Hibernate</li>
-                <li>Maven, IntelliJ, Eclipse</li>
-            </ul>
-        </div>
-    </div>
-            <div class="study-item">
-                <div class="study-summary">Boot Camp Full Stack PHP</div>
-                <div class="studycenter">IT Academy Barcelona Activa</div>
-                <div class="study-date">03/23 - 09/2023</div>
-                <div class="study-skills">
-                    <p><strong>Habilidades aprendidas:</strong></p>
-                    <ul>
-                        <li>PHP, Laravel, MySQL</li>
-                        <li>HTML, CSS</li>
-                        <li>Git, XAMPP, PHPMyAdmin, Composer</li>
-                    </ul>
-                </div>
-            </div>
-           
-            <div class="study-item">
-                <div class="study-summary">Edic y Postprod de audiovisuales</div>
-                <div class="studycenter">35mm School</div>
-                <div class="study-date">02/19 - 02/20</div>
-                <div class="study-skills">
-                    <p><strong>Habilidades aprendidas:</strong></p>
-                    <ul>
-                        <li>Davinci Resolve</li>
-                        <li>Adobe After Effects</li>
-                        <li>Adobe Premiere</li>
-                    </ul>
-                </div>
-            </div>
-            
-        </div>
+  bootcamps: `
+  <div class="bootcamp-grid">
+  <div class="study-item">
+      <div class="study-summary">Bootcamp de Java</div>
+      <div class="studycenter">Alura - Oracle Next Education</div>
+      <div class="study-date">12/22 - present</div>
+      <div class="study-skills">
+          <p><strong>Habilidades aprendidas:</strong></p>
+          <ul>
+              <li>Java, OOP, PostgreSQL</li>
+              <li>Spring boot, Hibernate</li>
+              <li>Maven, IntelliJ, Eclipse</li>
+          </ul>
+      </div>
+  </div>
+  <div class="study-item">
+      <div class="study-summary">Boot Camp Full Stack PHP</div>
+      <div class="studycenter">IT Academy Barcelona Activa</div>
+      <div class="study-date">03/23 - 09/2023</div>
+      <div class="study-skills">
+          <p><strong>Habilidades aprendidas:</strong></p>
+          <ul>
+              <li>PHP, Laravel, MySQL</li>
+              <li>HTML, CSS</li>
+              <li>Git, XAMPP, PHPMyAdmin, Composer</li>
+          </ul>
+      </div>
+  </div>
+  <div class="study-item">
+      <div class="study-summary">Edic y Postprod de audiovisuales</div>
+      <div class="studycenter">35mm School</div>
+      <div class="study-date">02/19 - 02/20</div>
+      <div class="study-skills">
+          <p><strong>Habilidades aprendidas:</strong></p>
+          <ul>
+              <li>Davinci Resolve</li>
+              <li>Adobe After Effects</li>
+              <li>Adobe Premiere</li>
+          </ul>
+      </div>
+  </div>
+</div>
+
     `,
-    certifications: `
+  certifications: `
     <div class="cert-grid">
         
     </div>
 
 
-    `
+    `,
 };
 
-document.getElementById('bootcamps').innerHTML = studiesContent.bootcamps;
-document.getElementById('certifications').innerHTML = studiesContent.certifications;
+document.getElementById("bootcamps").innerHTML = studiesContent.bootcamps;
+document.getElementById("certifications").innerHTML =
+  studiesContent.certifications;
 
 function closeProjectModal() {
-    document.getElementById('projectModal').style.display = 'none';
+  document.getElementById("projectModal").style.display = "none";
 }

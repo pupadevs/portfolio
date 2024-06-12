@@ -25,10 +25,13 @@
         <div class="window-body" id="windowBody">
             <nav class="menu">
                 <button onclick="showSection('about')">Sobre mí</button>
-                <button onclick="showSection('projects')">Proyectos</button>
                 <button onclick="showSection('experience')">Experiencia</button>
                 <button onclick="showSection('studies')">Estudios</button>
                 <button onclick="showSection('skills')">Habilidades</button>
+                <button onclick="showSection('projects')">Proyectos</button>
+              
+                
+              
                 <button onclick="showSection('contact')">Contacto</button>
             </nav>
             <div id="content">
@@ -74,20 +77,27 @@
                     </div>
                 </div>
                 <div id="skills" class="section" style="display: none;">
-                    <h2>Habilidades</h2>
+                    <h2>Skills</h2>
                     <nav class="submenu">
+                        <button onclick="showSubsectionSkills('softskills')">Softskills</button>
                         <button onclick="showSubsectionSkills('languages')">Lenguajes</button>
+                      
                         <button onclick="showSubsectionSkills('frameworks')">Frameworks</button>
                         <button onclick="showSubsectionSkills('databases')">BBDD</button>
+                        
                         <button onclick="showSubsectionSkills('tools')">Tools</button>
                     </nav>
+
+                   
                     <div id="languages" class="subsection">
                         <p>Descripción de lenguajes</p>
                         <i class="fab fa-php"></i> PHP
                         <i class="fab fa-java"></i> Java
                     </div>
+                    
+                  
                     <div id="frameworks" class="subsection" style="display: none;">
-                        <p>Descripción demicrosoftameworks</p>
+                        <p>Descripción de frameworks</p>
                         <i class="fab fa-laravel"></i> Laravel
                         <i class="fab fa-java"></i> Spring
                     </div>
@@ -96,13 +106,18 @@
                         <i class="fas fa-database"></i> MySQL
                         <i class="fas fa-database"></i> PostgreSQL
                     </div>
+                    <div id="softskills" class="subsection">
+                        <p>Descripción de softskills</p>
+                        <i class="fas fa-running"></i> Adaptabilidad
+                        <i class="fas fa-running"></i> Liderazgo
+                        <i class="fas fa-running"></i> Colaboración
+                    </div>
                     <div id="tools" class="subsection" style="display: none;">
                         <p>Descripción de Herramientas</p>
                         <div class="tools-list">
                             <div class="tool-item"><i class="fab fa-git"></i> Git</div>
                             <div class="tool-item"><i class="fab fa-github"></i> GitHub</div>
                             <div class="tool-item"><i class="fab fa-microsoft"></i> VSCode</div>
-                            <div class="tool-item"><i class="fab fa-docker"></i> Docker</div>
                             <div class="tool-item"><i class="fab fa-java"></i> IntelliJ IDEA</div>
                             <div class="tool-item"><i class="fab fa-java"></i> Eclipse</div>
                             <div class="tool-item"><i class="fab fa-microsoft"></i> Visual Studio</div>
@@ -128,7 +143,7 @@
                         <a href="https://github.com/pupadevs" target="_blank">
                             <img src="https://simpleicons.org/icons/github.svg" alt="GitHub">
                         </a>
-                        <a href="https://discord.com/users/usuario" target="_blank">
+                        <a href="https://discord.com/users/ispupa" target="_blank">
                             <img src="https://simpleicons.org/icons/discord.svg" alt="Discord">
                         </a>
                     </div>
