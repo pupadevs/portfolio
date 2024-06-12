@@ -155,7 +155,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content:end;
     margin-right: 20px;
 }
 .about-photo img {
@@ -512,25 +512,28 @@ body {
     .about{
        display: flex;
        flex-direction: column;
-       align-items: center;
-       justify-content: center;
-       width: 100%;
-       height: 100%;
-       margin: 0;
-       padding: 0;
+     
        
     }
     .about-container {
         width: 100%;
-        margin: 0;
-        padding: 0;
+     
       
     }
+    
+.about-photo{
+    display: flex;
+    flex-direction: column;
+    align-items:start;
+  
+    margin-right: 20px;
+}
 
+.contact-details {
     .about img {
         width: 100%;
         height: 100%;
-        flex-wrap: wrap;
+        flex-wrap: nowrap;
     
        
         
@@ -572,6 +575,7 @@ body {
 
   
  }
+}
 
 
  @media only screen and (min-width: 1400px)  {
