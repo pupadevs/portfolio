@@ -139,7 +139,7 @@ function openProjectModal(projectId) {
 const aboutContent = `
 <div class="about-container">
     <div class="about-photo">
-        <img src="img/petercovervga.jpg" alt="Foto de Perfil">
+        <img src="img/petercovervgas.jpg" alt="Foto de Perfil">
         <div class="contact-details">
         <a href="mailto:petesonsena24@gmail.com">
             <i class="fas fa-envelope"></i> 
@@ -155,6 +155,9 @@ const aboutContent = `
         <p>Soy programador PHP con una pasión que se remonta a mis primeros días explorando MS-DOS en 1995. Me he enfocado en el desarrollo backend, donde cada línea de código es una oportunidad para poder aprender y mejorar.</p>
     
         <p>Admito que estoy en una etapa inicial de mi carrera, me considero un junior muy curioso. Me entusiasma enfrentarme a nuevos retos y encontrar soluciones que no solo funcionen, sino que también sean eficientes. </p>
+            <br>
+        <p>Si eres interesado en trabajar conmigo, no dudes en contactarme. Estare encantado de trabajar contigo.</p>
+
        
     </div>
 </div>
@@ -207,46 +210,46 @@ document.getElementById("experience").innerHTML = experienceContent.experience;
 
 const studiesContent = {
   bootcamps: `
-  <div class="bootcamp-grid">
-  <div class="study-item">
-      <div class="study-summary">Bootcamp de Java</div>
-      <div class="studycenter">Alura - Oracle Next Education</div>
-      <div class="study-date">12/22 - present</div>
-      <div class="study-skills">
-          <p><strong>Habilidades aprendidas:</strong></p>
-          <ul>
-              <li>Java, OOP, PostgreSQL</li>
-              <li>Spring boot, Hibernate</li>
-              <li>Maven, IntelliJ, Eclipse</li>
-          </ul>
-      </div>
-  </div>
-  <div class="study-item">
-      <div class="study-summary">Boot Camp Full Stack PHP</div>
-      <div class="studycenter">IT Academy Barcelona Activa</div>
-      <div class="study-date">03/23 - 09/2023</div>
-      <div class="study-skills">
-          <p><strong>Habilidades aprendidas:</strong></p>
-          <ul>
-              <li>PHP, Laravel, MySQL</li>
-              <li>HTML, CSS</li>
-              <li>Git, XAMPP, PHPMyAdmin, Composer</li>
-          </ul>
-      </div>
-  </div>
-  <div class="study-item">
-      <div class="study-summary">Edic y Postprod de audiovisuales</div>
-      <div class="studycenter">35mm School</div>
-      <div class="study-date">02/19 - 02/20</div>
-      <div class="study-skills">
-          <p><strong>Habilidades aprendidas:</strong></p>
-          <ul>
-              <li>Davinci Resolve</li>
-              <li>Adobe After Effects</li>
-              <li>Adobe Premiere</li>
-          </ul>
-      </div>
-  </div>
+       <div class="bootcamp-grid">
+    <div class="study-item">
+        <div class="study-summary">Bootcamp de Java</div>
+        <div class="studycenter">Alura - Oracle Next Education</div>
+        <div class="study-date">12/22 - present</div>
+        <div class="study-skills">
+            <p><strong>Habilidades aprendidas:</strong></p>
+            <ul>
+                <li>Java, OOP, PostgreSQL</li>
+                <li>Spring boot, Hibernate</li>
+                <li>Maven, IntelliJ, Eclipse</li>
+            </ul>
+        </div>
+    </div>
+    <div class="study-item">
+        <div class="study-summary">Boot Camp Full Stack PHP</div>
+        <div class="studycenter">IT Academy Barcelona Activa</div>
+        <div class="study-date">03/23 - 09/2023</div>
+        <div class="study-skills">
+            <p><strong>Habilidades aprendidas:</strong></p>
+            <ul>
+                <li>PHP, Laravel, MySQL</li>
+                <li>HTML, CSS</li>
+                <li>Git, XAMPP, PHPMyAdmin, Composer</li>
+            </ul>
+        </div>
+    </div>
+    <div class="study-item">
+        <div class="study-summary">Edic y Postprod de audiovisuales</div>
+        <div class="studycenter">35mm School</div>
+        <div class="study-date">02/19 - 02/20</div>
+        <div class="study-skills">
+            <p><strong>Habilidades aprendidas:</strong></p>
+            <ul>
+                <li>Davinci Resolve</li>
+                <li>Adobe After Effects</li>
+                <li>Adobe Premiere</li>
+            </ul>
+        </div>
+    </div>
 </div>
 
     `,

@@ -162,7 +162,7 @@ body {
     margin-right: 14px;
 }
 .about-photo img {
-    width:16%; /* Ajusta según sea necesario */
+    width:24%; /* Ajusta según sea necesario */
     height: auto;
     border: 2px solid black;
 }
@@ -656,7 +656,7 @@ body {
     flex-direction: column;
     justify-content:center;
     align-items: center;
-    font-size:5vw;
+    font: size 12px;;
   
   
 }
