@@ -138,9 +138,13 @@ const aboutContent = `
     <div class="about-photo">
         <img src="img/petercover.jpg" alt="Foto de Perfil">
         <div class="contact-details">
-        <p>Email: <a href="mailto:petesonsena24@gmail.com">petesonsena24@gmail.com</a></p>
-        <p>Teléfono: <a href="tel:+34695469001">+34695469001</a></p>
-        </div>
+        <a href="mailto:petesonsena24@gmail.com">
+            <i class="fas fa-envelope"></i> 
+        </a>
+        <a href="tel:+34695469001">
+        <i class="fas fa-phone"></i>
+     </a>
+    </div>
     </div>
     <div class="about-details">
         <button class="download-cv" onclick="downloadCV()">Descargar CV</button>
@@ -255,12 +259,3 @@ document.getElementById('certifications').innerHTML = studiesContent.certificati
 function closeProjectModal() {
     document.getElementById('projectModal').style.display = 'none';
 }
-window.showSection = showSection;
-window.showSubsection = showSubsection;
-window.showSubsectionSkills = showSubsectionSkills;
-window.maximizeWindow = maximizeWindow;
-window.closeWindow = closeWindow;
-window.downloadCV = downloadCV;
-window.openProjectModal = openProjectModal;
-window.closeProjectModal = closeProjectModal;
-window.toggleStartMenu = toggleStartMenu;

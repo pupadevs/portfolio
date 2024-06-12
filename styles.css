@@ -100,7 +100,6 @@ body {
 }
 
 .menu button {
-    font-family: 'MS Sans Serif', Tahoma, sans-serif;
     margin-right: 10px;
     padding: 5px;
     background: lightgray;
@@ -155,7 +154,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content:end;
+    justify-content: center;
     margin-right: 20px;
 }
 .about-photo img {
@@ -163,6 +162,20 @@ body {
     height: auto;
     border: 2px solid black;
 }
+.contact-details {
+    display: flex;
+    gap: 10px; /* Ajusta el espacio entre los iconos */
+    margin-top: 10px; /* Ajusta el espacio superior si es necesario */
+    margin-bottom: 10px;
+   width: 100%;
+   justify-content: center;
+}
+
+.contact-details a {
+    text-decoration: none;
+    ; /* Mantiene el color del texto por defecto */
+}
+
 .download-cv {
     background-color: #008080;
     color: white;
@@ -491,8 +504,8 @@ body {
         display: flex;
          
         flex-direction:column-reverse;
-        margin-bottom: 20px;
-        width: 100%;
+        margin-bottom: 6px;
+   
     }
     
     .menu button {
@@ -509,13 +522,10 @@ body {
         background: darkgray;
         outline: none;
     }
-    .about{
-       display: flex;
-       flex-direction: column;
-     
-       
-    }
+   
     .about-container {
+        display: flex;
+        flex-direction:column;
         width: 100%;
      
       
@@ -523,21 +533,12 @@ body {
     
 .about-photo{
     display: flex;
-    flex-direction: column;
-    align-items:start;
+    flex-wrap:wrap;
+    align-items:center;
   
     margin-right: 20px;
 }
 
-.contact-details {
-    .about img {
-        width: 100%;
-        height: 100%;
-        flex-wrap: nowrap;
-    
-       
-        
-    }
     .about-text {
         width: 100%;
         margin: 0;
@@ -575,7 +576,8 @@ body {
 
   
  }
-}
+
+
 
 
  @media only screen and (min-width: 1400px)  {
