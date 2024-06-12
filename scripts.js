@@ -137,11 +137,14 @@ const aboutContent = `
 <div class="about-container">
     <div class="about-photo">
         <img src="img/petercover.jpg" alt="Foto de Perfil">
+        <div class="contact-details">
+        <p>Email: <a href="mailto:petesonsena24@gmail.com">petesonsena24@gmail.com</a></p>
+        <p>Teléfono: <a href="tel:+34695469001">+34695469001</a></p>
+        </div>
     </div>
     <div class="about-details">
         <button class="download-cv" onclick="downloadCV()">Descargar CV</button>
-        <p>Email: <a href="mailto:petesonsena24@gmail.com">petesonsena24@gmail.com</a></p>
-        <p>Teléfono: <a href="tel:+34695469001">+34695469001</a></p>
+     
         <p>Programador PHP con experiencia previa como creador de videoclips musicales. Me reinventé hacia la programación, un mundo que siempre me ha cautivado desde mi primer encuentro con MS-DOS en 1995. Fusiono mi experiencia en la creación audiovisual con la programación para desarrollar soluciones innovadoras en este emocionante campo. Estoy siempre abierto a conocer nuevas tecnologías y aprender nuevas formas de lograr un código limpio y consistente. Disfruto sumergirme en desafios, son oportunidades para crecer y superarme constamente</p>
     </div>
 </div>
