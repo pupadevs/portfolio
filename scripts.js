@@ -139,7 +139,7 @@ function openProjectModal(projectId) {
 const aboutContent = `
 <div class="about-container">
     <div class="about-photo">
-        <img src="img/petercovervgas.jpg" alt="Foto de Perfil">
+        <img src="img/petercovervga.jpg" alt="Foto de Perfil">
         <div class="contact-details">
         <a href="mailto:petesonsena24@gmail.com">
             <i class="fas fa-envelope"></i> 
@@ -152,11 +152,12 @@ const aboutContent = `
     <div class="about-details">
         <button class="download-cv" onclick="downloadCV()">Descargar CV</button>
      
-        <p>Soy programador PHP con una pasión que se remonta a mis primeros días explorando MS-DOS en 1995. Me he enfocado en el desarrollo backend, donde cada línea de código es una oportunidad para poder aprender y mejorar.</p>
+        <p>Soy programador PHP con una pasión que se remonta a mis primeros días explorando <i class="fas fa-desktop"></i> MS-DOS en 1995. Me he enfocado en el desarrollo backend, donde cada línea de código es una oportunidad para poder aprender y mejorar.</p>
     
         <p>Admito que estoy en una etapa inicial de mi carrera, me considero un junior muy curioso. Me entusiasma enfrentarme a nuevos retos y encontrar soluciones que no solo funcionen, sino que también sean eficientes. </p>
-            <br>
-        <p>Si eres interesado en trabajar conmigo, no dudes en contactarme. Estare encantado de trabajar contigo.</p>
+        <br>
+        <p>Si estás interesado en trabajar conmigo, no dudes en contactarme. Estaré encantado de trabajar contigo. 🚀👨‍💻</p>
+        
 
        
     </div>
@@ -172,13 +173,13 @@ const experienceContent = {
         <div class="experience-center">IT Academy- Barcelona Activa</div>
         <div class="experience-date">09/23 - 03/24</div>
         <div class="experience-skills">
-        <p><strong>Habilidades aprendidas:</strong></p>
+        <p><strong>Skills:</strong></p>
         <ul>
             <li>Scrum, Swagger</li>
             <li>UniTests, PHPUnit</li>
             <li>GitActions</li>
         </ul>
-        <p><strong>Habilidades blandas:</strong></p>
+        <p><strong>Soft Skills:</strong></p>
         <ul>
             <li>Resolución de problemas</li>
             <li>Trabajo en equipo</li>
@@ -192,7 +193,7 @@ const experienceContent = {
     <div class="experience-center">FreeLance</div>
     <div class="experience-date">09/15 - 03/20</div>
     <div class="experience-skills">
-      <p><strong>Habilidades blandas:</strong></p>
+      <p><strong>Soft Skills:</strong></p>
 <ul>
     <li>Comunicación efectiva</li>
     <li>Gestión del tiempo</li>
@@ -216,7 +217,7 @@ const studiesContent = {
         <div class="studycenter">Alura - Oracle Next Education</div>
         <div class="study-date">12/22 - present</div>
         <div class="study-skills">
-            <p><strong>Habilidades aprendidas:</strong></p>
+            <p><strong>Skills:</strong></p>
             <ul>
                 <li>Java, OOP, PostgreSQL</li>
                 <li>Spring boot, Hibernate</li>
@@ -229,7 +230,7 @@ const studiesContent = {
         <div class="studycenter">IT Academy Barcelona Activa</div>
         <div class="study-date">03/23 - 09/2023</div>
         <div class="study-skills">
-            <p><strong>Habilidades aprendidas:</strong></p>
+            <p><strong>Skills:</strong></p>
             <ul>
                 <li>PHP, Laravel, MySQL</li>
                 <li>HTML, CSS</li>
@@ -242,7 +243,7 @@ const studiesContent = {
         <div class="studycenter">35mm School</div>
         <div class="study-date">02/19 - 02/20</div>
         <div class="study-skills">
-            <p><strong>Habilidades aprendidas:</strong></p>
+            <p><strong>Skills:</strong></p>
             <ul>
                 <li>Davinci Resolve</li>
                 <li>Adobe After Effects</li>

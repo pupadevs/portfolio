@@ -211,7 +211,7 @@ body {
 }
 
 .project:hover {
-    background: silver;
+    background: rgb(123, 123, 123);
 }
 .project-grid {
     display: grid;
@@ -236,15 +236,17 @@ body {
     padding: 10px;
     margin: 10px 0;
     background: lightgray;
-    cursor: pointer;
+    cursor:-webkit-grabbing;
    
 }
 
 .experience-item:hover {
-    background: rgb(160, 160, 160);
+    background: rgb(123, 123, 123);
 }
 .experience-summary {
     font-weight: bold;
+    font-size: 16px;
+    
 }
 .experience-center {
     font-style: italic;
@@ -255,10 +257,11 @@ body {
 .experience-date {
     font-style: italic;
     color: darkblue;
+    font-size: 10px;
 }
 /*** STUDIES ***/
 #studies .study-item:hover {
-    background: rgb(160, 160, 160);
+    background: rgb(123, 123, 123);
 }
 
 #studies .study-item {
@@ -277,6 +280,8 @@ body {
 }
 .study-summary {
     font-weight: bold;
+    font-size: 16px;
+
 }
 .studycenter {
     font-style: italic;
@@ -288,6 +293,8 @@ body {
 .study-date {
     font-style: italic;
     color: darkblue;
+    font-size: 10px;
+
 }
 
 .study-skills {
@@ -656,7 +663,7 @@ body {
     flex-direction: column;
     justify-content:center;
     align-items: center;
-    font: size 12px;;
+    font: size 10px;;
   
   
 }
