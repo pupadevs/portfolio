@@ -6,39 +6,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Peterson Sena - PortFolio</title>
     <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="descarga.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 </head>
 
 <body>
-   
+
     <div class="window" id="cvWindow">
 
         <div class="title-bar">
-            <div class="title-bar-text">Peterson Sena</div>
+            <div class="title-bar-text" id="titleBarText">Peterson Sena</div>
             <div class="title-bar-controls">
                 <button aria-label="Minimize" ">_</button>
                 <button aria-label=" Maximize" onclick="maximizeWindow()">⬜</button>
-                <button aria-label="Close" onclick="closeWindow()">×</button>
+                <button aria-label="Close">×</button>
             </div>
         </div>
         <div class="window-body" id="windowBody">
+            <!--Navigation-->
             <nav class="menu">
                 <button onclick="showSection('about')">Sobre mí</button>
                 <button onclick="showSection('experience')">Experiencia</button>
                 <button onclick="showSection('studies')">Estudios</button>
                 <button onclick="showSection('skills')">Habilidades</button>
                 <button onclick="showSection('projects')">Proyectos</button>
-              
-                
-              
                 <button onclick="showSection('contact')">Contacto</button>
             </nav>
             <div id="content">
+                <!--Sobre mi-->
                 <div id="about" class="section">
-                  
-                   
-                </div>
+
+
+                    
+                 </div>
+                 <!--Proyectos-->
                 <div id="projects" class="section" style="display: none;">
                     <div class="project-grid">
                         <div class="project" onclick="openProjectModal('project2')">
@@ -53,9 +53,11 @@
 
                     </div>
                 </div>
+                <!--Experiencia-->
                 <div id="experience" class="section" style="display: none;">
-                  
+
                 </div>
+                <!--Estudios-->
                 <div id="studies" class="section" style="display: none;">
                     <div id="study-menu" class="submenu-container">
 
@@ -67,81 +69,39 @@
                     </div>
 
                     <div id="bootcamps" class="subsection">
-                       
+
                     </div>
                     <div id="certifications" class="subsection" style="display: none;">
-                        <ul>
-                            <li>Certificación JavaScript - FreeCodeCamp - 2021</li>
-                            <li>Certificación React - Udemy - 2020</li>
-                        </ul>
+
                     </div>
                 </div>
+                <!--Habilidades-->
                 <div id="skills" class="section" style="display: none;">
                     <h2>Skills</h2>
                     <nav class="submenu">
-<!--                         <button onclick="showSubsectionSkills('softskills')">Softskills</button>
- -->                        <button onclick="showSubsectionSkills('languages')">Lenguajes</button>
-                      
+                        <!--           <button onclick="showSubsectionSkills('softskills')">Softskills</button>-->
+                        <button onclick="showSubsectionSkills('languages')">Lenguajes</button>
+
                         <button onclick="showSubsectionSkills('frameworks')">Frameworks</button>
                         <button onclick="showSubsectionSkills('databases')">BBDD</button>
-                        
+
                         <button onclick="showSubsectionSkills('tools')">Tools</button>
                     </nav>
 
-                   
                     <div id="languages" class="subsection">
-                        <p>Descripción de lenguajes</p>
-                        <i class="fab fa-php"></i> PHP
-                        <i class="fab fa-java"></i> Java
+
                     </div>
-                    
-                  
                     <div id="frameworks" class="subsection" style="display: none;">
-                        <p>Descripción de frameworks</p>
-                        <i class="fab fa-laravel"></i> Laravel
-                        <i class="fab fa-java"></i> Spring
                     </div>
                     <div id="databases" class="subsection" style="display: none;">
-                        <p>Descripción de Bases de datos</p>
-                        <i class="fas fa-database"></i> MySQL
-                        <i class="fas fa-database"></i> PostgreSQL
                     </div>
-                 
                     <div id="tools" class="subsection" style="display: none;">
-                        <p>Descripción de Herramientas</p>
-                        <div class="tools-list">
-                            <div class="tool-item"><i class="fab fa-git"></i> Git</div>
-                            <div class="tool-item"><i class="fab fa-github"></i> GitHub</div>
-                            <div class="tool-item"><i class="fab fa-microsoft"></i> VSCode</div>
-                            <div class="tool-item"><i class="fab fa-java"></i> IntelliJ IDEA</div>
-                            <div class="tool-item"><i class="fab fa-java"></i> Eclipse</div>
-                            <div class="tool-item"><i class="fab fa-microsoft"></i> Visual Studio</div>
-                            <div class="tool-item"><i class="fas fa-database"></i> MySQL Workbench</div>
-                            <div class="tool-item"><i class="fas fa-server"></i> phpMyAdmin</div>
-                            <div class="tool-item"><i class="fas fa-cogs"></i> XAMPP</div>
-                            <div class="tool-item"><i class="fas fa-flask"></i> Postman</div>
-                            <div class="tool-item"><i class="fas fa-terminal"></i> Bash</div>
-                            <div class="tool-item"><i class="fas fa-cube"></i> Composer</div>
-                            <div class="tool-item"><i class="fas fa-cogs"></i> Maven</div>
-                            <div class="tool-item"><i class="fas fa-server"></i> Apache</div>
-                        </div>
                     </div>
-                    
+
                 </div>
+                <!--Contacto-->
                 <div id="contact" class="section" style="display: none;">
-                    <h2>Contacto</h2>
-                    <div class="contact-icons">
-                        
-                        <a href="https://www.linkedin.com/in/peterson-sena" target="_blank">
-                            <img src="https://simpleicons.org/icons/linkedin.svg" alt="LinkedIn">
-                        </a>
-                        <a href="https://github.com/pupadevs" target="_blank">
-                            <img src="https://simpleicons.org/icons/github.svg" alt="GitHub">
-                        </a>
-                        <a href="https://discord.com/users/ispupa" target="_blank">
-                            <img src="https://simpleicons.org/icons/discord.svg" alt="Discord">
-                        </a>
-                    </div>
+
                 </div>
             </div>
         </div>
@@ -160,6 +120,21 @@
             </div>
         </div>
     </div>
+
+    <div class="modal" id="experienceModal">
+        <div class="window">
+            <div class="title-bar">
+                <div class="title-bar-text" id="modalTitle">Detalles del trabajo</div>
+                <div class="title-bar-controls">
+                    <button aria-label="Close" onclick="closeExperienceModal()">×</button>
+                </div>
+            </div>
+            <div class="window-body" id="modalContent">
+                <!-- Contenido del modal se llena dinámicamente -->
+            </div>
+        </div>
+    </div>
+
     <!-- Barra de tareas estilo Windows 95 -->
     <footer class="taskbar">
         <div class="start-button" onclick="toggleStartMenu()">
@@ -188,10 +163,23 @@
             <span id="taskbarClock">12:00 AM</span>
             <span id="taskbarVolume"><img src="https://win98icons.alexmeub.com/icons/png/loudspeaker_rays-0.png"
                     alt=""></span>
+            <span id="taskbarModem"><img src="https://win98icons.alexmeub.com/icons/png/modem-0.png" alt=""></span>
         </div>
+
     </footer>
 
-    <script src="scripts.js"></script>
+    <!-- <script src="scripts.js"></script> -->
+    <script src="/js/main.js"></script>
+    <script src="/js/about.js"></script>
+    <script src="/js/studies.js"></script>
+    <script src="/js/expirience.js"></script>
+    <script src="/js/skills.js"></script>
+    <script src="/js/contact.js"></script>
+    <script src="/js/navigation.js"></script>
+    <script src="/js/modal.js"></script>
+    <script src="/js/download.js"></script>
+    <script src="/js/clock.js"></script>
+    <script src="/js/windowManagament.js"></script>
 </body>
 
 </html>
