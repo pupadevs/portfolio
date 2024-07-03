@@ -18,7 +18,7 @@ const aboutContent = `
     
         <p>Admito que estoy en una etapa inicial de mi carrera, me considero un junior muy curioso. Me entusiasma enfrentarme a nuevos retos y encontrar soluciones que no solo funcionen, sino que también sean eficientes. </p>
         <br>
-        <p>Si estás interesado en trabajar conmigo, no dudes en contactarme. Estaré encantado de trabajar contigo. 🚀👨‍💻</p>
+        <p>Si estás interesado en trabajar conmigo, no dudes en contactarme. Estaré encantado de trabajar contigo. 🚀</p>
     </div>
 </div>
 `;
