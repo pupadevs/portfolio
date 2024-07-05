@@ -161,6 +161,7 @@ body {
     justify-content: center;
     margin-right: 14px;
 }
+
 .about-photo img {
     width:24%; /* Ajusta según sea necesario */
     height: auto;
@@ -579,10 +580,16 @@ body {
     
    
     .about-details {
+        
         margin-left: 0;
         margin-top: 2px;
         text-align: left;
        
+    }
+    .about-bio{
+        display: block;
+        height: 30vh; /* O la altura deseada */
+        overflow-y:scroll;
     }
     .about-details button {
         font-size: 12px;

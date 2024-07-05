@@ -11,14 +11,14 @@ const aboutContent = `
      </a>
     </div>
     </div>
-    <div class="about-details">
+    <div class="about-details" id="about-details">
         <button class="download-cv" onclick="downloadCV()">Descargar CV</button>
-     
-        <p>Soy programador Backend con una pasión que se remonta a mis primeros días explorando <i class="fas fa-desktop"></i> MS-DOS en 1995. Me he enfocado en el desarrollo backend, donde cada línea de código es una oportunidad para poder aprender y mejorar.</p>
-    
-        <p>Admito que estoy en una etapa inicial de mi carrera, me considero un junior muy curioso. Me entusiasma enfrentarme a nuevos retos y encontrar soluciones que no solo funcionen, sino que también sean eficientes. </p>
+        <p></p>
+        <p>Hola👋. Soy Peterson Sena, programador Backend junior con una pasión que se remonta a mis primeros días explorando MS-DOS en 1995. Me he especializado en el desarrollo backend, donde cada línea de código representa una oportunidad para aprender y mejorar.</p>
+        <p>Creo firmemente en el poder de la curiosidad y el aprendizaje continuo para poder impulsar la innovación y la calidad en el desarrollo de software. </p>
         <br>
         <p>Si estás interesado en trabajar conmigo, no dudes en contactarme. Estaré encantado de trabajar contigo. 🚀</p>
+       
     </div>
 </div>
 `;
