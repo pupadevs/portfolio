@@ -16,7 +16,7 @@ const studiesContent = {
           </div>
       </div>
       <div class="study-item">
-          <div class="study-summary">Boot Camp Full Stack PHP</div>
+          <div class="study-summary">BootCamp Full Stack PHP</div>
           <div class="studycenter">IT Academy Barcelona Activa</div>
           <div class="study-date">03/23 - 09/2023</div>
           <div class="study-skills">
