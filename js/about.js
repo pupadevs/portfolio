@@ -14,8 +14,8 @@ const aboutContent = `
     <div class="about-details" id="about-details">
         <button class="download-cv" onclick="downloadCV()">Descargar CV</button>
         <p></p>
-        <p>Hola👋. Soy Peterson Sena, programador Backend junior con una pasión que se remonta a mis primeros días explorando MS-DOS en 1995. Me he especializado en el desarrollo backend, donde cada línea de código representa una oportunidad para aprender y mejorar.</p>
-        <p>Creo firmemente en el poder de la curiosidad y el aprendizaje continuo para poder impulsar la innovación y la calidad en el desarrollo de software. </p>
+        <p>Hola👋. Programador PHP apasionado por la tecnología. Me especializo en escribir código limpio y eficiente, siempre buscando la excelencia en cada proyecto. </p>
+        <p>Soy curioso por naturaleza, lo que me impulsa a explorar continuamente nuevas tecnologías y metodologías </p>
         <br>
         <p>Si estás interesado en trabajar conmigo, no dudes en contactarme. Estaré encantado de trabajar contigo. 🚀</p>
        
